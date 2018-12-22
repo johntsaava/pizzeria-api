@@ -1,0 +1,10 @@
+{
+  "firstName": "John",
+  "lastName": "Tsaava",
+  "email": "johntsaava@gmail.com",
+  "hashedPassword": "968c325e8b101eb82680f46337b3ea0a67336ac0e8577309aeae87af05540b9e",
+  "address": "Example Street",
+  "tosAgreement": true,
+  "cart": { "j1w4b635706whuarfn3w": 7 },
+  "orders": ["totqfsndkd70cmpw0tbi", "i42wrmknp15i6kybvvp1"]
+}
