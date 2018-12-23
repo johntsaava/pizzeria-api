@@ -50,12 +50,11 @@ headers:
 token: string
 ```
 body:
+```
 Required data  
-```
 email: string
-```
+
 Optional data (at least one must be specified)
-```
 firstName: string  
 lastName: string
 password: string
