@@ -71,6 +71,20 @@ address: string
 tosAgreement: boolean
 ```
 
+## delete
+route:
+```
+/users?email=string
+```
+params:
+```
+email: string
+```
+headers:
+```
+token: string
+```
+
 # Tokens
 ## post
 route: /tokens
