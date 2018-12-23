@@ -204,3 +204,32 @@ headers:
 ```
 token: string
 ```
+
+# Menus
+
+## get
+route:
+```
+/menus?email=string
+```
+params:
+```
+email: string
+```
+headers:
+```
+token: string
+```
+response(example):
+```
+{
+    "2qi4kemd4odhkbgtlbyy": {
+        "name": "The Meats",
+        "price": 1699
+    },
+    "16rmegrsx8g8e72nmcn8": {
+        "name": "Cheese",
+        "price": 1150
+    }
+}
+```
