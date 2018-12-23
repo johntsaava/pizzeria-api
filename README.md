@@ -10,12 +10,14 @@ route:
 ```
 body:
 ```
-firstName: string  
-lastName: string
-email: string
-password: string
-address: string
-tosAgreement: boolean
+{
+    "firstName": string,
+    "lastName": string,
+    "email": string,
+    "password": string,
+    "address": string,
+    "tosAgreement": boolean
+}
 ```
 
 ## get
@@ -62,23 +64,27 @@ token: string
 body:\
 *Required data*
 ```
-email: string
+{
+    "email": string,
 ```
 *Optional data (at least one must be specified)*
 ```
-firstName: string  
-lastName: string
-password: string
-address: string
-tosAgreement: boolean
+    "firstName": string,
+    "lastName": string,
+    "password": string,
+    "address": string,
+    "tosAgreement": boolean
+}
 ```
 response:
 ```
-firstName: string  
-lastName: string
-email: string
-address: string
-tosAgreement: boolean
+{
+    "firstName": string,
+    "lastName": string,
+    "email": string,
+    "address": string,
+    "tosAgreement": boolean
+}
 ```
 
 ## delete
@@ -101,14 +107,10 @@ route: /tokens
 
 body:
 ```
-email: string
-password: string
-```
-response:
-```
-email: string,
-id: string,
-expires: number
+{
+    "email": string,
+    "password": string
+}
 ```
 
 ## get
@@ -120,6 +122,14 @@ params:
 ```
 id: string
 ```
+response(example):
+```
+{
+    "email": "johntsaava@gmail.com",
+    "id": "nkzj9a73o4q25n03ohx2",
+    "expires": 1545581001754
+}
+```
 
 ## put
 route:
@@ -128,8 +138,10 @@ route:
 ```
 body:
 ```
-id: string
-extend: boolean
+{
+    "id": string,
+    "extend": boolean
+}
 ```
 
 ## delete
