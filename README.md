@@ -1,5 +1,5 @@
 # pizzeria-api
-Homework Assignment #2
+Homework assignment #2 for the node.js master class
 
 # Users
 ## Users - post
