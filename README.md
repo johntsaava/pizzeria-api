@@ -149,7 +149,7 @@ token: string
 ```
 body:
 ```
-menuItems: {string: number, string: number}
+menuItems: {string(id): number, string(id): number}
 ```
 
 ## get
@@ -168,8 +168,8 @@ token: string
 response:
 ```
 {
-  string: number,
-  string: number
+  string(id): number,
+  string(id): number
 }
 ```
 
@@ -188,7 +188,7 @@ token: string
 ```
 body:
 ```
-menuItems: {string: number, string: number}
+menuItems: {string(id): number, string(id): number}
 ```
 
 ## delete
