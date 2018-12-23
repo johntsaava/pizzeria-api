@@ -31,13 +31,23 @@ headers:
 ```
 token: string
 ```
-response:
+response(example):
 ```
-firstName: string  
-lastName: string
-email: string
-address: string
-tosAgreement: boolean
+{
+    "firstName": "John",
+    "lastName": "Tsaava",
+    "email": "johntsaava@gmail.com",
+    "address": "Example Street",
+    "tosAgreement": true,
+    "cart": {
+        "j1w4b635706whuarfn3w": 3,
+        "2qi4kemd4odhkbgtlbyy": 1
+    },
+    "orders": [
+        "yiflidj2093zwl3z8y4t",
+        "kx6rxwvjhp1lfodtmcza"
+    ]
+}
 ```
 
 ## put
@@ -243,5 +253,55 @@ response(example):
     "name": "Supreme",
     "price": 1600
   }
+}
+```
+
+# Orders
+## post
+
+route: 
+```
+/orders
+```
+headers:
+```
+token: string
+```
+body:
+```
+{
+    "email": string,
+    "source": string
+}
+```
+
+## get
+route:
+```
+/orders?id=string
+```
+params:
+```
+id: string
+```
+headers:
+```
+token: string
+```
+response(example):
+```
+{
+    "orderId": "kx6rxwvjhp1lfodtmcza",
+    "email": "johntsaava@gmail.com",
+    "source": "tok_visa",
+    "cart": {
+        "j1w4b635706whuarfn3w": 7,
+        "2qi4kemd4odhkbgtlbyy": 1
+    },
+    "amount": 12899,
+    "cartItemsDescriptions": [
+        "7 Supreme $16",
+        "1 The Meats $16.99"
+    ]
 }
 ```
