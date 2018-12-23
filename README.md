@@ -49,12 +49,13 @@ headers:
 ```
 token: string
 ```
-body:
+body:\
+*Required data*
 ```
-Required data  
 email: string
-
-Optional data (at least one must be specified)
+```
+*Optional data (at least one must be specified)*
+```
 firstName: string  
 lastName: string
 password: string
