@@ -2,7 +2,7 @@
 Homework Assignment #2
 
 # Users
-## post
+## Users - post
 
 route: 
 ```
@@ -20,7 +20,7 @@ body:
 }
 ```
 
-## get
+## Users - get
 route:
 ```
 /users?email=string
@@ -52,7 +52,7 @@ response(example):
 }
 ```
 
-## put
+## Users - put
 route:
 ```
 /users
@@ -87,7 +87,7 @@ response:
 }
 ```
 
-## delete
+## Users - delete
 route:
 ```
 /users?email=string
@@ -102,7 +102,7 @@ token: string
 ```
 
 # Tokens
-## post
+## Tokens - post
 route: /tokens
 
 body:
@@ -113,7 +113,7 @@ body:
 }
 ```
 
-## get
+## Tokens - get
 route:
 ```
 /tokens?id=string
@@ -131,7 +131,7 @@ response(example):
 }
 ```
 
-## put
+## Tokens - put
 route:
 ```
 /tokens
@@ -144,7 +144,7 @@ body:
 }
 ```
 
-## delete
+## Tokens - delete
 route:
 ```
 /tokens?id=string
@@ -155,7 +155,7 @@ id: string
 ```
 
 # Carts
-## post
+## Carts - post
 
 route: 
 ```
@@ -178,7 +178,7 @@ body(example):
 }
 ```
 
-## get
+## Carts - get
 route:
 ```
 /carts?email=string
@@ -199,7 +199,7 @@ response(example):
 }
 ```
 
-## put
+## Carts - put
 route:
 ```
 /carts?email=string
@@ -221,7 +221,7 @@ body(example):
 }
 ```
 
-## delete
+## Carts - delete
 route:
 ```
 /carts?email=string
@@ -237,7 +237,7 @@ token: string
 
 # Menus
 
-## get
+## Menus - get
 route:
 ```
 /menus?email=string
@@ -269,7 +269,7 @@ response(example):
 ```
 
 # Orders
-## post
+## Orders - post
 
 route: 
 ```
@@ -287,7 +287,7 @@ body:
 }
 ```
 
-## get
+## Orders - get
 route:
 ```
 /orders?id=string
