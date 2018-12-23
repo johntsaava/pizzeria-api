@@ -1,7 +1,7 @@
 # pizzeria-api
 Homework assignment #2 for "The Node.js Master Class"
 
-#How to use this API
+# How to use this API
 
 # Users
 ## Users - post
