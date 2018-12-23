@@ -147,9 +147,13 @@ headers:
 ```
 token: string
 ```
-body:
+body(example):
 ```
-menuItems: {string(id): number, string(id): number}
+{
+    "menuItems":{
+    	"j1w4b635706whuarfn3w": 2
+    }
+}
 ```
 
 ## get
@@ -165,11 +169,11 @@ headers:
 ```
 token: string
 ```
-response:
+response(example):
 ```
 {
-  string(id): number,
-  string(id): number
+    "j1w4b635706whuarfn3w": 7,
+    "2qi4kemd4odhkbgtlbyy": 1
 }
 ```
 
@@ -186,9 +190,13 @@ headers:
 ```
 token: string
 ```
-body:
+body(example):
 ```
-menuItems: {string(id): number, string(id): number}
+{
+    "menuItems":{
+    	"j1w4b635706whuarfn3w": 2
+    }
+}
 ```
 
 ## delete
@@ -223,13 +231,17 @@ token: string
 response(example):
 ```
 {
-    "2qi4kemd4odhkbgtlbyy": {
-        "name": "The Meats",
-        "price": 1699
-    },
-    "16rmegrsx8g8e72nmcn8": {
-        "name": "Cheese",
-        "price": 1150
-    }
+  "2qi4kemd4odhkbgtlbyy": {
+    "name": "The Meats",
+    "price": 1699
+  },
+  "16rmegrsx8g8e72nmcn8": {
+    "name": "Cheese",
+    "price": 1150
+  },
+  "j1w4b635706whuarfn3w": {
+    "name": "Supreme",
+    "price": 1600
+  }
 }
 ```
