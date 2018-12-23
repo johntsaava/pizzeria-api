@@ -131,3 +131,76 @@ params:
 ```
 id: string
 ```
+
+# Carts
+## post
+
+route: 
+```
+/carts?email=string
+```
+params:
+```
+email: string
+```
+headers:
+```
+token: string
+```
+body:
+```
+menuItems: {string: number, string: number}
+```
+
+## get
+route:
+```
+/carts?email=string
+```
+params:
+```
+email: string
+```
+headers:
+```
+token: string
+```
+response:
+```
+{
+  string: number,
+  string: number
+}
+```
+
+## put
+route:
+```
+/carts?email=string
+```
+params:
+```
+email: string
+```
+headers:
+```
+token: string
+```
+body:
+```
+menuItems: {string: number, string: number}
+```
+
+## delete
+route:
+```
+/carts?email=string
+```
+params:
+```
+email: string
+```
+headers:
+```
+token: string
+```
